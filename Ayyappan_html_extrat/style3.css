@@ -1,0 +1,27 @@
+body{
+    background-image: url(image/luonto.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.btn {
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .success {background-color: #04AA6D;} /* Green */
+  .success:hover {background-color: #1a5c1c;}
+  
+  .info {background-color: #2196F3;} /* Blue */
+  .info:hover {background: #297dc2;}
+  
+  .warning {background-color: #ff9800;} /* Orange */
+  .warning:hover {background: #965e0a;}
+  
+  .danger {background-color: #f44336;} /* Red */ 
+  .danger:hover {background: #961910;}
+  
+  .default {background-color: #e7e7e7; color: black;} /* Gray */ 
+  .default:hover {background: #867a7a;}

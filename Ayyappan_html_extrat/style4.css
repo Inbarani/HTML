@@ -1,0 +1,33 @@
+/* Aseta tyylit body-elementille */
+body {
+    margin-top: 10%;
+    background-image: url(image/wooden-product.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+  }
+/* Aseta tyylit ilmoituselementille */  
+  .notification {
+    background-color: #d50808;
+    color: white;
+    text-decoration: none;
+    padding: 15px 26px;
+    position: relative;
+    display: inline-block;
+    border-radius: 5px;
+  }
+  /* Aseta tyylit hover-tehosteelle ilmoituselementissä */
+  .notification:hover {
+    background: rgb(10, 181, 132);
+  }
+  /* Aseta tyylit ilmoituksen sisällä olevalle merkkielementille */
+  .notification .badge {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    padding: 5px 10px;
+    border-radius: 50%;
+    background-color: rgb(15, 167, 175);
+    color: white;
+  }

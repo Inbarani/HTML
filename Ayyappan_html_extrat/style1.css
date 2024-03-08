@@ -1,0 +1,53 @@
+/*asettaa taustakuvan body-elementille*/
+body{
+    background-image: url(image/luonto1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;    
+}
+
+/*muotoilee h1- ja h3-elementtien värit kastanjanruskeiksi.*/
+h1, h3 {
+    color: maroon;
+}
+/*tyylit avattavasta painikkeesta*/
+.dropbtn {
+  background-color: blue;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/*Avattavan valikon sisältö on alun perin piilotettu, mutta se näytetään, 
+kun käyttäjä vie hiiren osoittimen avattavan valikon painikkeen päälle.*/
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #b1eebe;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(248, 48, 48, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/*määrittää pudotusvalikon sisällön hiiren taustavärin*/
+.dropdown-content a:hover {background-color: #eba0a0;}
+
+/*Avattavan valikon sisältö on alun perin piilotettu, 
+mutta se näytetään, kun käyttäjä vie hiiren osoittimen avattavan valikon painikkeen päälle.*/
+.dropdown:hover .dropdown-content {display: block;}
+
+/*Kun pudotusvalikon kohde siirretään päälle, 
+se muuttaa taustaväriään.*/
+.dropdown:hover .dropbtn {background-color: #3e8e41;}

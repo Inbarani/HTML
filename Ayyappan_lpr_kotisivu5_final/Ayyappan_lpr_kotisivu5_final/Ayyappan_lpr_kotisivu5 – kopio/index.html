@@ -1,0 +1,65 @@
+<!DOCTYPE html>  
+
+<html lang="fi">
+  <!--Se linkittää Css-tiedoston html-tiedostoon-->
+  
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style5.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <title>Lappeenrannan kotisivut</title> 
+    
+</head>  
+<!--style="margin-left: 20%; margin-right: 20%;"tehty css:llä-->
+<body> 
+  
+<section>
+  <header>
+     <!-- Tämä koodi luo otsikon tekstin kanssa ja lisää siihen korostuksen-->
+     <h1 style="text-align: center; font-size: 60px;"><span class="highlight">Lappeenranta</span></h1>
+     <img src="img/lappeenranta.jpg" alt="Lappeenranta" style="width: 100%;">  
+  </header>
+
+
+<div class="topnav" id="myTopnav">
+  <a href="index.html" class="active">Etusivu</a>
+  <a href="historia.html">Historia</a>
+  <a href="nykyaika.html">Nykyaika</a>
+  <a href="paleutekysely.html">Paleutekysely</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+    <p> 
+        <strong>Lappeenranta</strong> (ruots. Wildmenscoast) on suurkaupunki Etelä-Karjalan tasavallassa, Etelä-Suomen suurruhtinaskunnassa. Kaupunki on nykyisin jaettu osaksi Venäjää.  
+
+        Matkaa Lappeenrannasta Helsinkiin on 221 kilometriä, Pendolinolla 442 kilometriä. Venäläisten matkailijoiden ansiosta <strong>Lappeenranta</strong> on Suomen suurin kaupunki. 
+
+        <strong>Lappeenranta</strong> suunnitteli naapurikunta Joutsenon vallankaappausta pitkään ja se tapahtui tammikuussa 2009. Samoin <strong>Lappeenranta</strong> on kaapannut vallan Lauritsalassa,  
+
+        Lappeessa, Nuijamaalla ja Ylämaalla. <strong>Lappeenranta</strong> suunnittelee myös kaappaavansa Imatran, Rautjärven ja Ruokolahden kasvaakseen Karjalan suurimmaksi  
+
+        suurkaupungiksi. Nykyisin suositaan lähinnä Kieliopillisesti Oikeaa Kirjoitusasua: "lappeen Ranta". 
+
+    </p>  
+
+ 
+ 
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+</section>    
+</body>
+<footer>
+  &copy; Inbarani Ayyappan 2023
+</footer>
+</html>  

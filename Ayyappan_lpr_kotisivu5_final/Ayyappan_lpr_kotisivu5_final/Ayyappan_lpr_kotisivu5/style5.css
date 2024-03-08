@@ -1,0 +1,168 @@
+/* background image and size */
+body {
+    /*marginaali ylä- ja alareunassa: 10 %; marginaali-oikea ja vasen: 20 %*/
+    margin: 10% 20%;
+    background-image: url(img/sunny1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: justify;
+}
+header {
+    border-color: #127622;
+}
+
+article {
+    border: 2px solid green;
+}
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  .topnav .icon {
+    display: none;
+  }
+  
+ 
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+table {
+    border-collapse: collapse;
+    width: 100%;
+    overflow: auto;
+  }
+  
+td {
+    text-align: right;
+    padding: 8px;
+  }
+  
+tr:nth-child(even){background-color: #f2f2f2}
+  
+th {
+    background-color: #127622;
+    color: white;
+    text-align: left;
+    padding: 8px;
+  }
+/* kuvan keskiosat toistetaan reunan luomiseksi,käyttämällä border property */
+.border {
+    border: 10px solid transparent;
+    padding: 15px;
+    border-image: url(img/border1.png) 50 round;
+}
+/*border-image - Eri viipalearvot*/
+.border1 {
+    display: block;
+    color:white;
+    border: 20px solid transparent;
+    padding: 15px;
+    border-image: url(img/golden_border.png) 50 round;
+    
+    width: 80%;              
+}
+.border1 .textlabel {
+    display: block;
+    border-radius: 10px;
+}
+.input input{
+    width: 50%;
+    font-size: medium;
+    border-radius: 5px;
+    padding: 5px 10px ;
+    border: 2px solid rgb(10, 56, 47);
+    box-sizing: border-box;
+    margin: 5px 0px 15px;    
+}
+/* Tyylit tekstin korostamiseen */    
+.highlight {
+    background-color: rgb(6, 167, 76);/* Aseta taustaväriksi vihrea */
+    color:white; /* Aseta tekstin väriksi valkoinen */ 
+
+}
+
+/*määrittää linear transitio efekti samalla nopeudella alusta loppuun*/
+.transition {
+    width: 30px;
+    height: 30px;
+    transition: width 2s linear;      
+    
+}
+
+/*Lisää transition ominaisuudet elementin hover-tilaan*/
+.transition:hover {
+    width: 180px;
+    background-color: aqua;    
+}
+/* kuva animaatio*/
+.animaatio  {
+    position: relative;
+    animation-name: example;
+    animation-duration: 2s;
+    animation-timing-function: linear;   
+}
+
+/*border-radius -ominaisuuden luomiseksi pyöristettyjä kuvia*/
+img {
+    border-radius: 10%;
+    
+}
+/*Määritä avainkehysanimaatio, joka kiertää elementtiä 20 astetta 360 astetta*/
+@keyframes example {
+    20% { transform: rotate(20deg); }
+    100% { transform: rotate(360deg); }
+} 
+
+
+@media screen and (max-width:350px) {
+    body{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }    
+
+

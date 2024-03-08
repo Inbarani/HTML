@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <title>Esimerkki Kirjadu lomake</title>
+  <link rel="stylesheet" href="style1.css">
+</head>    
+<body>
+
+  <h2>Kirjadu</h2>
+  <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Kirjaudu</button>
+
+  <div class="malli">
+    <a href="#id01" class="sulkea" title="Sulkea">&times;</a> 
+    <form class="malli1" action="" method="post">
+      <div class="container">
+        <h1>Kirjaudu</h1>
+        <p>Täytä tämä lomake luodaksesi tilin.</p>
+        <hr>
+        <div class="input">
+          <label class="textlabel" for="Sähköposti"><b>Sähköposti</b></label><br>
+          <input type="email" placeholder="Kirjoita sähköposti" name="Sähköposti" required>
+        </div>
+        <div class="input">
+          <label class="textlabel" for="Salasana"><b>Salasana</b></label>
+          <input type="password" placeholder="Kirjoita salasana" name="Salasana" required>
+        </div>
+        <div class="input">
+          <label class="textlabel" for="Toista-salasana"><b>Toista salasana</b></label>
+          <input type="password" placeholder="Toista salasana" name="Toista-salasana" required>
+        </div>
+        <label>
+          <input type="checkbox" checked="checked" name="muistaa" style="margin-bottom:15px"> Muista minut
+        </label>
+        <p>Luomalla tilin hyväksyt meidän <a href="#" style="color:dodgerblue">Ehdot ja tietosuoja</a>.</p>
+        <div class="float">
+          <button type="reset" class="peruutubtn">Peruuttaa</button>
+          <button type="submit" class="kirjaudubtn">Kirjaudu</button>
+        </div>
+      </div>
+    </form>
+  </div>
+
+</body>
+</html>

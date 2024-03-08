@@ -1,0 +1,52 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+} 
+
+.palautelomake{
+    width: 500px;
+    margin: 100px auto;
+    padding: 20px 30px 30px;
+    background-color: #57C5B6;
+    color: #1A5F7A
+}
+.palautelomake h3{
+    text-align: center;
+    color: #1A5F7A
+}
+.palautelomake .textlabel{
+    display: block;
+    border-radius: 10px;
+}
+.input input{
+    width: 85%;
+    font-size: medium;
+    border-radius: 5px;
+    padding: 5px 10px ;
+    border: 2px solid rgb(10, 56, 47);
+    box-shadow: 3px;
+    box-sizing: border-box;
+    margin: 5px 0px 15px;    
+}
+input :focus{
+    background-color: rgb(236, 32, 5);
+
+}
+.btn {
+   text-align: center;
+   
+    
+}
+button{
+    background-color: #1A5F7A;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+    color: white;
+    margin-top: 15px;
+    padding: 10px 20px;
+    size: 20px 20px;
+}
+.checkbox input{
+    accent-color: blue;
+   
+}
+

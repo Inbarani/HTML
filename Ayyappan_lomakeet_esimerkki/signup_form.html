@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<title>Esimerkki Kirjadu lomake</title>
+<link rel="stylesheet" href="style1.css">
+</head>    
+<body>
+
+<h2>Kirjaudu</h2>
+<!--Se näyttää modaalisen valintaikkunan, jonka tunnus on "id01", kun sitä napsautetaan.-->
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Kirjaudu</button>
+
+<div id="id01" class="malli">
+    <!--"Sulje-painike", jota edustaa "x"-merkki.-->
+    <a href="#id01" class="sulkea" title="Sulkea">&times;</a> 
+    <form class="malli1">
+    <div class="container">
+      <h1>Kirjaudu</h1>
+      <p>Täytä tämä lomake luodaksesi tilin.</p>
+      <hr>
+      <div class="input">
+      <label class="textlabel" for="Sähköposti">Sähköposti</label>
+      <input type="email" id="Sähköposti" name="Sähköposti" value="">
+      </div>
+      <div class="input">      
+      <label class="textlabel" for="Salasana">Salasana:</label>
+      <input type="password" id="Salasana" name="Salasana" value="">
+      </div>
+      <div class="input">
+      <label class="textlabel" for="Salasana2">Toista-Salasana:</label>
+      <input type="password" id="Salasana2" name="Salasana2" value="">
+      </div>
+            
+      
+      <label>
+        <input type="checkbox" checked="checked" name="muistaa" style="margin-bottom:15px"> Muista minut</label>
+
+      <p>Luomalla tilin hyväksyt meidän <a href="#" style="color:dodgerblue">Ehdot ja tietosuoja</a>.</p>
+
+      <div class="float">
+        <button type="reset" onclick="document.getElementById('id01').style.display='none'" class="peruutubtn">Peruuttaa</button>
+        <button type="submit" class="kirjaudubtn">Kirjaudu</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<script>
+    // Get the modal
+    var modal = document.getElementById('id01');
+    window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+    
+</script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>  
+
+<html lang="fi">
+  <!--Se linkittää Css-tiedoston html-tiedostoon-->
+  
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style5.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <title>Lappeenrannan kotisivut</title> 
+    
+</head>  
+<!--style="margin-left: 20%; margin-right: 20%;"tehty css:llä-->
+<body> 
+  
+<section>
+  <header>
+     <!-- Tämä koodi luo otsikon tekstin kanssa ja lisää siihen korostuksen-->
+     <h1 style="text-align: center; font-size: 60px;"><span class="highlight">Lappeenranta</span></h1>
+     <img src="img/lappeenranta.jpg" alt="Lappeenranta" style="width: 100%;">  
+  </header>
+
+
+<div class="topnav" id="myTopnav">
+  <a href="index.html">Etusivu</a>
+  <a href="historia.html">Historia</a>
+  <a href="nykyaika.html">Nykyaika</a>
+  <a href="paleutekysely.html" class="active">Paleutekysely</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<div class="border">
+  <h2>Kirjaston palautekysely</h2>
+</div>
+    
+    <form method="post" action="mailto:inbarani.ayyappan@edu.ekky.fi">
+      
+      <p></p>
+      <p></p>
+      <h3 style="color: blue;">Anna palautetta: Kirjasto</h3>
+      <p>Kirjoita palautteesi. Sinisellä <b style="font-size: 25px; color: deepskyblue;">*</b>-merkillä merkityt kentät ovat pakollisia.</p>
+      <label for="toimipiste">Toimipiste</label><br>
+      <select id="toimipiste" name="toimipiste">
+          <option value="Joutseno">Joutseno</option>
+          <option value="Lappeenranta">Lappeenranta</option>
+          <option value="Imatra">Imatra</option>            
+      </select><br>
+      <br>
+      <label for="Palauteen">Palauteen luonne<b style="font-size: 25px; color: deepskyblue;">*</b>:</label><br>
+      <select id="Palauteen" name="Palauteen">
+          <option value="Kiitos">Kiitos</option>
+          <option value="Moite">Moite</option>
+          <option value="Kysymys">Kysymys</option>            
+      </select><br>
+      <p></p>
+      <p>Palauteteksti (Ei yhteystietoja eikä arkaluonteista tietoa)</p>
+      <textarea rows="5" cols="50" name="feedback-text"></textarea>
+      <p><b>Liittet</b></p>
+      <p>Voit liittää palautteeseen yhden tai useampia liitetiedostoja, esimerkiksi kuvia havainnosta. <br>Liitteiden yhteenlaskettu maksimikoko on 8.0Mb.</p>
+      <label for="file-upload">choosefile:</label>
+      <input type="file" id="file-upload" name="file-upload">
+      <p></p>
+      
+      <div class="border1">        
+        <h2 style="color: blue;">Anna yhteystiedot</h2>
+        <div class="input">
+          <label class="textlabel" for="Etunimi">Etunimi</label>
+          <input type="text" id="Etunimi" name="Etunimi" value="">      
+          <label class="textlabel" for="Sukunimi">Sukunimi:</label>
+          <input type="text" id="Sukunimi" name="Sukunimi" value="">
+        </div>
+        <div class="input">
+          <label class="textlabel" for="s_posti">Sähköposti:</label>
+          <input type="email" id="s_posti" name="s_posti" value="">
+        </div>
+        <div class="input">
+          <label class="textlabel" for="puhelin">Puhelin:</label>
+          <input type="number" id="puhelin" name="puhelin" value="">
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" id="vastaus" name="vastaus" value="">
+          <label for="vastaus"> Haluan vastauksen palautteeseen sähköpostiini. </label>          
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" id="Hyväksy" name="Hyväksy" value="">
+          <label for="Hyväksy"> Hyväksyn palvelun Käyttöehdot ja Tietosuojaselosteen vastauksen palautteeseen sähköpostiini. </label>
+        </div>
+        <div class="btn">
+          <button type="submit">LÄHETÄ</button> 
+        </div>
+      </div>
+      
+    </form>
+  
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+</section>    
+</body>
+<footer>
+  &copy; Inbarani Ayyappan 2023
+</footer>
+</html>  

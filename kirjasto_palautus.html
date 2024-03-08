@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kirjasto Palautetta</title>
+    
+</head>
+<body>
+    <form action="upload.php" method="post" enctype="multipart/form-data">
+        <h2 style="color: #0292c0;">LAPPEENRANTA</h2>
+        <hr>
+        <p></p>
+        <p></p>
+        <h3 style="color: blue;">Anna palautetta: Kirjasto</h3>
+        <p>Kirjoita palautteesi. Sinisellä <b style="font-size: 25px; color: deepskyblue;">*</b>-merkillä merkityt kentät ovat pakollisia.</p>
+        <label for="toimipiste">Toimipiste</label><br>
+        <select id="toimipiste" name="toimipiste">
+            <option value="Joutseno">Joutseno</option>
+            <option value="Lappeenranta">Lappeenranta</option>
+            <option value="Imatra">Imatra</option>            
+        </select><br>
+        <br>
+        <label for="Palauteen">Palauteen luonne<b style="font-size: 25px; color: deepskyblue;">*</b>:</label><br>
+        <select id="Palauteen" name="Palauteen">
+            <option value="Kiitos">Kiitos</option>
+            <option value="Moite">Moite</option>
+            <option value="Kysymys">Kysymys</option>            
+        </select><br>
+        <p></p>
+        <p>Palauteteksti (Ei yhteystietoja eikä arkaluonteista tietoa)</p>
+        <textarea rows="5" cols="50" name="feedback-text"></textarea>
+        <p><b>Liittet</b></p>
+        <p>Voit liittää palautteeseen yhden tai useampia liitetiedostoja, esimerkiksi kuvia havainnosta. <br>Liitteiden yhteenlaskettu maksimikoko on 8.0Mb.</p>
+        <label for="file-upload">choosefile:</label>
+        <input type="file" id="file-upload" name="file-upload">
+        <hr>
+        <h2 style="color: #0292c0;">Anna yhteystiedot</h2>
+        <label for="Etunimi">Etunimi:</label>
+        <input type="text" id="Etunimi" name="Etunimi" value="">
+        <label for="Sukunimi">Sukunimi:</label>
+        <input type="text" id="Sukunimi" name="Sukunimi" value=""><br><br>        
+        <label for="s_posti">Sähköposti:</label><br>
+        <input type="email" id="s_posti" name="s_posti" value=""><br><br>
+        <label for="puhelin">Puhelin:</label><br>
+        <input type="number" id="puhelin" name="puhelin" value=""><br>
+
+        <input type="checkbox" id="vastaus" name="vastaus" value="">
+        <label for="vastaus"> Haluan vastauksen palautteeseen sähköpostiini. </label><br>
+        <hr>
+        <br>
+        <input type="checkbox" id="Hyväksy" name="Hyväksy" value="">
+        <label for="Hyväksy"> Hyväksyn palvelun Käyttöehdot ja Tietosuojaselosteen vastauksen palautteeseen sähköpostiini. </label><br>
+        <br>
+        <button type="submit">LÄHTEÄ</button> 
+        
+    </form>
+    
+</body>
+</html>

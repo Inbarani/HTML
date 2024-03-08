@@ -1,0 +1,84 @@
+/* Aseta box-sizing-ominaisuuden arvoksi border-box kaikille sivun elementeille. */
+*{box-sizing: border-box;}
+
+body {
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Luo navigointipalkki, jonka taustaväri on #ecbaba, 
+ja aseta ylivuoto piiloon, jotta sisältöä ei vuoda liikaa. */
+.topnav {
+  overflow: hidden;
+  background-color: #ecbaba;
+}
+
+/* Muokkaa linkkien tyyliä navigointipalkissa. */
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 16px 18px;
+  text-decoration: none;
+  font-size: 15px;
+}
+/* Lisää hover-tehoste linkkeihin, 
+kun käyttäjä vie hiiren osoittimen linkkien päälle. */
+.topnav a:hover {
+  background-color: #736666;
+  color: black;
+}
+/* Muodosta navigointipalkin aktiivisen linkin tyyli. */
+.topnav a.active {
+  background-color: #2196F3;
+  color: white;
+}
+/* Luo hakusäilö hakupalkin ja hakupainikkeen pitämistä varten. */
+.topnav .search-container {
+  float: right;
+}
+/* Muokkaa hakupalkin tyyliä navigointipalkissa. */
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+/* Muuta hakupainikkeen tyyliä navigointipalkissa. */
+.topnav .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+/* Lisää hover-tehoste hakupainikkeeseen, kun käyttäjä vie hiiri sen päälle. */
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+/* Luo mediakysely säätääksesi navigointipalkkia näytöille, 
+joiden leveys on enintään 500 pikseliä. */
+@media screen and (max-width: 500px) {
+  .topnav .search-container {
+    float: none;
+  }
+  /* Tyyli linkit, hakupalkki ja hakupainike näkyvät pystysuunnassa, 
+  kun näytön leveys on alle 600 pikseliä. */
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  /* Lisää reunus hakupalkkiin, kun näytön leveys on alle 600 pikseliä. */
+  .topnav input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}
+

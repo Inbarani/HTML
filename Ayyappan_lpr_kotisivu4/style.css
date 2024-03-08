@@ -1,0 +1,62 @@
+/* background image and size */
+body {
+    /*marginaali ylä- ja alareunassa: 10 %; marginaali-oikea ja vasen: 20 %*/
+    margin: 10% 20%;
+    background-image: url(img/sunny1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: justify;
+}
+/* kuvan keskiosat toistetaan reunan luomiseksi,käyttämällä border property */
+.border {
+    border: 10px solid transparent;
+    padding: 15px;
+    border-image: url(img/border1.png) 50 round;
+}
+/*border-image - Eri viipalearvot*/
+.border1 {
+    color:white;
+    border: 20px solid transparent;
+    padding: 15px;
+    border-image: url(img/golden_border.png) 50 round;
+              
+}
+/* Tyylit tekstin korostamiseen */    
+.highlight {
+    background-color: rgb(6, 167, 76);/* Aseta taustaväriksi vihrea */
+    color:white; /* Aseta tekstin väriksi valkoinen */
+
+}
+/*määrittää linear transitio efekti samalla nopeudella alusta loppuun*/
+.transition {
+    width: 30px;
+    height: 30px;
+    transition: width 2s linear;      
+    
+}
+
+/*Lisää transition ominaisuudet elementin hover-tilaan*/
+.transition:hover {
+    width: 180px;
+    background-color: aqua;    
+}
+/* kuva animaatio*/
+.animaatio  {
+    position: relative;
+    animation-name: example;
+    animation-duration: 2s;
+    animation-timing-function: linear;   
+}
+
+/*border-radius -ominaisuuden luomiseksi pyöristettyjä kuvia*/
+img {
+    border-radius: 20%;
+}
+/*Määritä avainkehysanimaatio, joka kiertää elementtiä 20 astetta 360 astetta*/
+@keyframes example {
+    20% { transform: rotate(20deg); }
+    100% { transform: rotate(360deg); }
+} 
+    
+    
+

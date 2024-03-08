@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pink Table Style</title>
+  <style>
+    table { width:500px; border-collapse:collapse; }
+    tbody th { background:DeepPink; color:White; }
+    tbody td { padding:3px; text-align:center; }
+    tfoot { font-size: small; }
+    colgroup.sidebar col { width:70px; }
+    colgroup.info col { width:80px; }
+    colgroup.info { border-left: 2px solid White; }
+    colgroup col.stripe { background:Pink;}
+  </style>
+</head>
+<body>
+  <table>
+    <table>
+        <col>
+        <colgroup class="info">
+        <col class="stripe">        
+        </colgroup>
+        
+        <colgroup class="sidebar"
+        
+        <colgroup class="info">
+        </colgroup>             
+        <col class="stripe">          
+        </colgroup>
+        <colgroup class="info">
+            <col>
+        <col class="stripe">
+        </colgroup>        
+        
+    <thead>
+      <tr>
+        <th>Category</th>
+        <th>Item 1</th>
+        <th>Item 2</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>Category 1</th>
+        <td>Data 1-1</td>
+        <td>Data 1-2</td>
+      </tr>
+      <tr>
+        <th>Category 2</th>
+        <td>Data 2-1</td>
+        <td>Data 2-2</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="3">This is a footer.</td>
+      </tr>
+    </tfoot>
+  </table>
+</body>
+</html>

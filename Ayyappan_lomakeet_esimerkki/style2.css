@@ -1,0 +1,47 @@
+
+body {font-family: Arial, Helvetica, sans-serif;
+margin-top: 50px;
+
+}
+
+.input-container {
+  display: -ms-flexbox; 
+  /* IE10 -ms-flexbox-ominaisuus on Microsoft-kohtainen etuliite*/
+  display: flex;
+  /*--Se asettaa näyttöominaisuuden arvoon "flex"*/
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.icon {
+  padding: 10px;
+  background: rgb(49, 239, 239);;
+  color: white;
+  min-width: 50px;
+  text-align: center;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+}
+
+.input-field:focus {
+  border: 2px solid green;
+}
+
+/* Aseta tyyli lähetyspainikkeelle */
+.btn {
+  background-color: rgb(49, 239, 239);
+  color: black;
+  padding: 15px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}

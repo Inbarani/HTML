@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lomake kuvakkeella</title>
+<!-- Lisää kuvakekirjasto -->
+<!--Tuo Font Awesome CSS -kirjaston sisällönjakeluverkosta (CDN) määritetyn URL-osoitteen avulla.-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--linkitä css-tiedosto-->
+<link rel="stylesheet" href="style2.css">
+
+
+</head>
+<body>
+
+<form style="max-width:500px;margin:auto">
+  <h2 style="text-align: center;">Ilmoittautumislomake</h2>
+  <div class="input-container">
+    <!--näyttääksesi käyttäjän kuvakkeen-->
+    <i class="fa fa-user icon"></i>
+    <input class="input-field" type="text" placeholder="Käyttäjätunnus" name="tunnus">
+  </div>
+
+  <div class="input-container" >
+    <!--näyttääksesi sähköpostin kuvakkeen-->
+    <i class="fa fa-envelope icon"></i>
+    <input class="input-field" type="text" placeholder="Sähköposti" name="Sähköposti">
+  </div>
+  
+  <div class="input-container">
+    <!--näyttääksesi näppäinkuvakkeen-->
+    <i class="fa fa-key icon"></i>
+    <input class="input-field" type="password" placeholder="Salasana" name="salasana">
+  </div>
+
+  <button type="submit" class="btn">Rekisteröidy</button>
+</form>
+
+</body>
+</html>

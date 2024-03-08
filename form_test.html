@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <title>Example Drop-Down Menu</title>
+  </head>
+  <body>
+    <label for="color-select">Select a color:</label>
+    <select id="color-select" name="colors">
+      <option value="red">Red</option>
+      <option value="green">Green</option>
+      <option value="blue">Blue</option>
+    </select>
+    <button onclick="showColor()">Show color</button>
+    <form>
+        <label for="feedback">Feedback:</label>
+        <textarea id="feedback" name="feedback" rows="4" cols="50" placeholder="write here"></textarea>
+        <br>
+        <button type="submit">Send</button>
+        <p style="letter-spacing: 1px;">Thisisaparagraphwithoutanyspacesbetweenwords.</p>
+
+      </form>
+      
+    <script>
+      function showColor() {
+        var select = document.getElementById("color-select");
+        var color = select.options[select.selectedIndex].value;
+        alert("You selected " + color + "!");
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,94 @@
+/* Aseta laatikon koko kaikille elementeille */
+* {box-sizing: border-box;}
+/* Poista oletusmerkkikohdat ul-elementistä */
+ul {list-style-type: none;}
+body {font-family: Verdana, sans-serif;}
+
+/* Kalenterikuukausiosion tyyli */
+.kuukausi {
+  padding: 70px 25px;
+  width: 100%;
+  background: #9b0f7a;
+  text-align: center;
+}
+
+
+/* Poista marginaali ja täyte ul-elementistä kalenterikuukausiosiossa */
+.kuukausi ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Luettelokohtien tyyli kalenterikuukausiosion sisällä */
+.kuukausi ul li {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+/* Edellisen kuukauden tyyli -painike */
+.kuukausi .edellinen {
+  float: left;
+  padding-top: 10px;
+}
+
+/* Tyyli ensi kuussa -painike */
+.kuukausi .seuraava {
+  float: right;
+  padding-top: 10px;
+}
+
+
+/* Arkipäiväosion muotoilu */
+.arkisin {
+  margin: 0;
+  padding: 10px 0;
+  background-color: #ddd;
+}
+
+/* Luettelokohtien muotoilu arkipäiväosion sisällä */
+.arkisin li {
+  display: inline-block;
+  width: 13.6%;
+  color: #666;
+  text-align: center;
+}
+
+/* Styling for Days -osio */
+.päivää {
+  padding: 10px 0;
+  background: #eee;
+  margin: 0;
+}
+
+/* Listan kohteiden tyyli päivien sisällä */
+.päivää li {
+  list-style-type: none;
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size:12px;
+  color: #777;
+}
+
+/* Muotoilu aktiiviseen päivään päivässä -osio */
+.päivää li .active {
+  padding: 5px;
+  background: #bb1e99;
+  color: white !important
+}
+
+/* Lisää mediakyselyitä pienempiä näyttöjä varten */
+@media screen and (max-width:720px) {
+  .arkisin li, .päivää li {width: 13.1%;}
+}
+
+@media screen and (max-width: 420px) {
+  .arkisin li, .päivää li {width: 12.5%;}
+  .päivää li .active {padding: 2px;}
+}
+
+@media screen and (max-width: 290px) {
+  .arkisin li, .päivää li {width: 12.2%;}
+}

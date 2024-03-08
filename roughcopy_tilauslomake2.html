@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fi">
+    <head>
+        <title>Tilauslomake2</title>
+        <style>
+            label {
+                display: inline-block;
+                width: 100px;
+                text-align: left;                
+            }
+            
+        </style>
+    </head>
+<body>
+
+<form>
+    <fieldset>
+        <h3 style="text-align: center;">TILAUSLOMAKE-FIRMA OY</h3>
+    <table style{"border:2px solid balck;"}>
+        <tr>
+            <label for="Nimi">Nimi:</label>
+            <input type="text" id="Nimi" name="Nimi" value=""><br><br>
+            <label for="osoite">Osoite:</label>
+            <input type="text" id="osoite" name="osoite" value=""><br><br>
+            <label for="posti">Postinro:</label>
+            <input type="text" id="posti" name="posti" value=""><br><br>
+            <label for="puhelin">Puh.nro:</label>
+            <input type="number" id="puhelin" name="puhelin" value=""><br><br>
+            <label for="s_posti">Sähköposti:</label>
+            <input type="email" id="s_posti" name="s_posti" value=""><br><br>
+
+        </tr>            
+        
+    
+        <br>Olen kiinnostunut:<br>
+        <input type="checkbox" id="kiinnostunut" name="kiinnostunut" value="vr-lasi">
+        <label for="kiinnostunut"> Vr-laseista</label><br>
+        <input type="checkbox" id="kiinnostunut2" name="kiinnostunut2" value="meta">
+        <label for="kiinnostunut2">Metaversumista</label><br>
+        <input type="checkbox" id="kiinnostunut3" name="kiinnostunut3" value="valokuitu">
+        <label for="kiinnostunut3">Valokuituyhteydestä</label><br>
+        <input type="checkbox" id="kiinnostunut4" name="kiinnostunut4" value="muusta">
+        <label for="kiinnostunut4">muusta:<br></label><br>
+        <input type="text" id="kiinnostunut4" name="kiinnostunut4" value="">
+
+        <br>Tietokoneesi malli<br>
+        <input type="checkbox" id="tietokone1" name="tietokone1" value="pc">
+        <label for="tietokone1">PC</label><br>
+        <input type="checkbox" id="tietokone2" name="tietokone2" value="kannettava">
+        <label for="tietokone2">Kannettava</label><br>
+        <input type="checkbox" id="tietokone3" name="tietokone3" value="Muu">
+        <label for="tietokone3">Muu</label><br>
+
+        <br>Palautetta:<br>
+        <textarea rows="5" cols="30" placeholder="Viesti myyjille..."></textarea>
+        <br>
+
+        <br>Käyttöjärjestelmä<br>
+        <select>
+            <option value="Windows">Windows 11</option>
+            <option value="Linux">Linux</option>
+            <option value="Mac">Mac</option>
+          </select><br>
+          <br>
+        <button type="submit">Lähteä</button>
+        <button type="reset">Tyhjennä</button>
+
+             
+    </table>   
+    </fieldset>    
+</form>
+</body>
+</html>

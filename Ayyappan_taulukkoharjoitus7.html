@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+	<title> 7 Taulukko </title>
+	<style>
+		table {
+        width: 500px;
+        border-collapse: collapse;      
+    }
+    tbody th { background:DeepPink; color:White; }
+    tbody td { padding:3px; text-align:center; }
+    tfoot { font-size: small; }    
+    colgroup.sidebar col { width:70px; }
+    colgroup.info col { width:80px; }
+    colgroup.info { border-left: 2px solid White; }
+    colgroup col.stripe { background:Pink;}    
+        
+	</style>
+</head>
+<body>     
+   
+    <table>
+        <caption> Breakfast Flights </caption>
+        <col>
+        <colgroup class="info">
+        <col class="stripe">        
+        </colgroup>        
+        <colgroup class="sidebar"></colgroup>        
+        
+        <colgroup>             
+        <col class="stripe">          
+        </colgroup>
+        <colgroup class="info">
+            <col>
+        <col class="stripe">
+        </colgroup>        
+        
+    
+        <thead>
+           
+            <tr>
+                <th colspan="6" style="text-align: center;">New York (JFK)-Los Angeles (LAX)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th></th>
+                <th>American<br>Airlines</th>
+                <th>Delta<br>Airlines</th>
+                <th>Alaska<br>Airlines</th>
+                <th>United</th>
+                <th>Continental</th>
+            </tr>
+            <tr>
+                <th>Departure</th>
+                <td>08:30</td>
+                <td>07:00</td>
+                <td>07:30</td>
+                <td>07:55</td>
+                <td>08:35</td>
+            </tr>
+            <tr>
+                <th>Arrival</th>
+                <td>12:05</td>
+                <td>10:30</td>
+                <td>10:45</td>
+                <td>11:30</td>
+                <td>12:00</td>
+            </tr>
+            <tr>
+                <th>Duration</th>
+                <td>6h35min</td>
+                <td>6h30min</td>
+                <td>6h15min</td>
+                <td>6h35min</td>
+                <td>6h25min</td>
+            </tr>
+            <tr>
+                <th>Price</th>
+                <td>$179</td>
+                <td>$195</td>
+                <td>$235</td>
+                <td>$225</td>
+                <td>$189</td>
+            </tr>
+
+
+        </tbody>               
+       
+       
+        <tfoot>
+            <tr>
+                <th colspan="6" style="text-align: left;" scope="row"> &bull; Flights are Non-Stop &bull; Times are 1-Way &bull; Prices Include Tax</th>
+            </tr>
+        </tfoot>        
+    
+      </table>
+      
+      </body>
+      </html>
+	

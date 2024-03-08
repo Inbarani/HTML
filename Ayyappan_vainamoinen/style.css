@@ -1,0 +1,39 @@
+
+body {
+  /* Aseta taustakuva ja toista se */
+    background-image: url(image/wall3.jpg)/* Image path  */;
+    background-repeat: repeat;
+    
+  /* Aseta kirjasinperhe ja marginaalit */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 5% 15%;
+    color: antiquewhite;
+  }
+  
+.highlight {
+  /* Tyylit tekstin korostamiseen */
+    background-color: red;/* Aseta taustaväriksi punainen */
+    color: white; /* Aseta tekstin väriksi valkoinen */
+        
+  }
+  h2{
+    color: white;
+  }
+  p {
+    /* Kappaleiden tyylit */
+    font-family: verdana;/* Aseta kirjasinperheeksi Verdana */
+    font-size: 18px;/* Aseta kirjasinkooksi 18 pikseliä */
+    text-align: justify;/* Tasaa teksti kappaleen sisällä */
+  } 
+  /* Tyylit kaikille div-elementeille */
+div {
+  /* Aseta taustaväriksi antiikkivalkoinen */
+    background-color: antiquewhite;
+}
+/* Tyylit kaikille järjestämättömille luetteloille */
+ul {
+  /* Käytä levyn luettelomerkkejä */
+    list-style-type: disc;
+    /* Aseta tekstin väri keltaiseksi */
+    color: yellow;
+}

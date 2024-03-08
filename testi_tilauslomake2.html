@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.menu {
+  float: left;
+  width: 20%;
+  text-align: left;
+  padding-right: 10%;
+  display: inline-block;
+  
+  label {
+    display: inline-block;
+    width: 20px;
+    text-align: left;
+  }                  
+    
+}
+
+.main {
+  float: left;
+  width: 60%;
+  padding: 0 20px;
+  text-align: left;
+}
+
+.right {
+  float: left;
+  width: 20%;
+  padding: 15px;
+  margin-top: 7px;
+  text-align: left;
+}
+fieldset {
+  width: 70%; /* set the width to 50% of its container */
+  height: 550px; /* set the height to 200 pixels */
+  border: 2px solid black; /* add a border */
+  padding: 10px; /* add some padding */
+  margin: 0 auto; /* center the fieldset horizontally */
+}
+</style>
+
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <h3 style="text-align: center;">TILAUSLOMAKE-FIRMA OY</h3>
+            <div>
+                <div class="menu">
+                    <label for="Nimi">Nimi:</label>
+                    <input type="text" id="Nimi" name="Nimi" value=""><br><br>
+                    <label for="osoite">Osoite:</label>
+                    <input type="text" id="osoite" name="osoite" value=""><br><br>
+                    <label for="posti">Postinro:</label>
+                    <input type="text" id="posti" name="posti" value=""><br><br>
+                    <label for="puhelin">Puh.nro:</label>
+                    <input type="number" id="puhelin" name="puhelin" value=""><br><br>
+                    <label for="s_posti">Sähköposti:</label>
+                    <input type="email" id="s_posti" name="s_posti" value=""><br><br>
+                    <br>Olen kiinnostunut:<br>
+                    <input type="checkbox" id="kiinnostunut" name="kiinnostunut" value="vr-lasi">
+                    <label for="kiinnostunut"> Vr-laseista</label><br>
+                    <input type="checkbox" id="kiinnostunut2" name="kiinnostunut2" value="meta">
+                    <label for="kiinnostunut2">Metaversumista</label><br>
+                    <input type="checkbox" id="kiinnostunut3" name="kiinnostunut3" value="valokuitu">
+                    <label for="kiinnostunut3">Valokuituyhteydestä</label><br>
+                    <input type="checkbox" id="kiinnostunut4" name="kiinnostunut4" value="muusta">
+                    <label for="kiinnostunut4">muusta:<br></label><br>
+                    <label for="kiinnostunut4"><br></label><br>                    
+                    </div>
+                    <div class="main">
+                    <br>Tietokoneesi malli<br>
+                    <input type="checkbox" id="tietokone1" name="tietokone1" value="pc">
+                    <label for="tietokone1">PC</label><br>
+                    <input type="checkbox" id="tietokone2" name="tietokone2" value="kannettava">
+                    <label for="tietokone2">Kannettava</label><br>
+                    <input type="checkbox" id="tietokone3" name="tietokone3" value="Muu">
+                    <label for="tietokone3">Muu</label><br>
+                    </div>
+
+  <div class="right">
+    <br>Käyttöjärjestelmä<br>
+        <select>
+            <option value="Windows">Windows 11</option>
+            <option value="Linux">Linux</option>
+            <option value="Mac">Mac</option>
+          </select><br>
+          <br>
+  </div>
+  <div class="main">
+    <br>Palautetta:<br>
+    <textarea rows="5" cols="30" placeholder="Viesti myyjille..."></textarea>
+    <br>
+  </div>
+  <div class="right">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <button type="submit">Lähteä</button>
+    <button type="reset">Tyhjennä</button>
+  </div>
+</div>
+</fieldset>
+</body>
+</html>
+
